@@ -1,3 +1,6 @@
+title: "Mythren: Legends Unfolded"
+description: "Explore the mystical world of Mythren."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://username.github.io" # the base hostname & protocol for your site
 theme: jekyll-theme-minimal
-title: Mythren: Legends Unfolded
-description: Explore the mystical world of Mythren.
+markdown: kramdown
