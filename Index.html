@@ -5,152 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mythren: Legends Unfolded</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .tab {
+            display: none;
+        }
+
+            .tab.active {
+                display: block;
+            }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            cursor: pointer;
+        }
+
+            .tabs div {
+                padding: 10px;
+                background-color: #ccc;
+                border: 1px solid #000;
+            }
+
+                .tabs div.active {
+                    background-color: #fff;
+                    border-bottom: none;
+                }
+    </style>
 </head>
 <body>
     <nav class="container-fluid">
         <ul>
             <li><strong>Mythren: Legends Unfolded</strong></li>
         </ul>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#characters">Characters</a></li>
-            <li><a href="#world">World</a></li>
-            <li><a href="#politics">Politics</a></li>
-            <li><a href="#contact" role="button">Contact</a></li>
+        <ul class="tabs">
+            <div class="tablink active" onclick="openTab('home')">Home</div>
+            <div class="tablink" onclick="openTab('characters')">Characters</div>
+            <div class="tablink" onclick="openTab('npcs')">NPCs</div>
+            <div class="tablink" onclick="openTab('world')">World</div>
+            <div class="tablink" onclick="openTab('politics')">Politics</div>
+            <div class="tablink" onclick="openTab('contact')">Contact</div>
         </ul>
     </nav>
     <main class="container">
-        <div class="grid">
-            <section id="home">
+        <div id="home" class="tab active">
+            <hgroup>
+                <h2>Welcome to Mythren</h2>
+                <h3>The Legends Unfolded</h3>
+            </hgroup>
+            <p>Explore the mystical world of Mythren, where legends come to life and adventures await. Meet the powerful characters, discover the rich cultures, and delve into the intricate politics of this fantastical realm.</p>
+        </div>
+        <div id="characters" class="tab">
+            <hgroup>
+                <h2>Characters</h2>
+                <h3>Meet the Heroes</h3>
+            </hgroup>
+            <p>Detailed descriptions of the key characters in the world of Mythren.</p>
+            <!-- Character sections -->
+            <section>
                 <hgroup>
-                    <h2>Welcome to Mythren</h2>
-                    <h3>The Legends Unfolded</h3>
+                    <h3>[Character Name 1]</h3>
+                    <h4>[Character Title 1]</h4>
                 </hgroup>
-                <p>Explore the mystical world of Mythren, where legends come to life and adventures await. Meet the powerful characters, discover the rich cultures, and delve into the intricate politics of this fantastical realm.</p>
+                <p>[Character Description 1]</p>
+                <figure>
+                    <img src="billeder/[character1].webp" alt="[Character Name 1]">
+                    <figcaption>[Character Name 1]</figcaption>
+                </figure>
+            </section>
+            <section>
+                <hgroup>
+                    <h3>[Character Name 2]</h3>
+                    <h4>[Character Title 2]</h4>
+                </hgroup>
+                <p>[Character Description 2]</p>
+                <figure>
+                    <img src="billeder/[character2].webp" alt="[Character Name 2]">
+                    <figcaption>[Character Name 2]</figcaption>
+                </figure>
+            </section>
+            <section>
+                <hgroup>
+                    <h3>[Character Name 3]</h3>
+                    <h4>[Character Title 3]</h4>
+                </hgroup>
+                <p>[Character Description 3]</p>
+                <figure>
+                    <img src="billeder/[character3].webp" alt="[Character Name 3]">
+                    <figcaption>[Character Name 3]</figcaption>
+                </figure>
             </section>
         </div>
+        <div id="npcs" class="tab">
+            <hgroup>
+                <h2>NPCs</h2>
+                <h3>Meet the Non-Player Characters</h3>
+            </hgroup>
+            <p>Detailed descriptions of the key NPCs in the world of Mythren.</p>
+            <!-- NPC sections -->
+            <section>
+                <hgroup>
+                    <h3>Kong Alaric af Aldoria</h3>
+                    <h4>The Noble King</h4>
+                </hgroup>
+                <p>Kong Alaric af Aldoria, en ædel og majestætisk konge kendt for sin visdom og retfærdighed. Han regerer over Aldoria med en fast, men retfærdig hånd, og søger altid at beskytte sit folk.</p>
+                <figure>
+                    <img src="billeder/king-alaric.webp" alt="King Alaric">
+                    <figcaption>Konge Alaric af Aldoria</figcaption>
+                </figure>
+            </section>
+            <section>
+                <hgroup>
+                    <h3>Elarion (High Elver, Konge)</h3>
+                    <h4>The Elven King</h4>
+                </hgroup>
+                <p>Elarion er den vise og ædle konge af de høje elvere i Eryndor. Han er kendt for sin retfærdighed og dybe forbindelse til naturens magi.</p>
+                <figure>
+                    <img src="billeder/elarion.webp" alt="Elarion">
+                    <figcaption>Elarion</figcaption>
+                </figure>
+            </section>
+            <section>
+                <hgroup>
+                    <h3>Selandriel (High Elver, Rådgiver)</h3>
+                    <h4>The Wise Counselor</h4>
+                </hgroup>
+                <p>Selandriel er en klog rådgiver til Elarion. Hun er en mester i magi og kendt for sin strategiske tænkning.</p>
+                <figure>
+                    <img src="billeder/selandriel.webp" alt="Selandriel">
+                    <figcaption>Selandriel</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div id="world" class="tab">
+            <hgroup>
+                <h2>World
+            </hgroup>
+            <h3>Explore the Realms</h3>
+            </hgroup>
+            <p>Discover the diverse landscapes and cultures of Mythren, from enchanted forests to majestic cities.</p>
+            <section>
+                <hgroup>
+                    <h3>Enchanted Forest</h3>
+                </hgroup>
+                <p>The Enchanted Forest is a magical place where mystical creatures and ancient trees thrive. It's a place of wonder and mystery, filled with glowing plants and a crystal-clear river.</p>
+                <figure>
+                    <img src="billeder/enchanted-forest.webp" alt="Enchanted Forest">
+                    <figcaption>Enchanted Forest</figcaption>
+                </figure>
+            </section>
+            <section>
+                <hgroup>
+                    <h3>Dwarven City</h3>
+                </hgroup>
+                <p>The Dwarven City is a grand underground metropolis, renowned for its intricate architecture and glowing forges. It's a place of great history and craftsmanship.</p>
+                <figure>
+                    <img src="billeder/dwarven-city.webp" alt="Dwarven City">
+                    <figcaption>Dwarven City</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div id="politics" class="tab">
+            <hgroup>
+                <h2>Politics</h2>
+                <h3>The Power Dynamics</h3>
+            </hgroup>
+            <p>Understand the intricate political landscape of Mythren, where powerful leaders and cunning diplomats shape the fate of the realms.</p>
+            <section>
+                <hgroup>
+                    <h3>Diplomatic Hall</h3>
+                </hgroup>
+                <p>The Diplomatic Hall is where key decisions are made. It's a place where leaders from different realms come together to discuss and negotiate the future of Mythren.</p>
+                <figure>
+                    <img src="billeder/diplomatic-hall.webp" alt="Diplomatic Hall">
+                    <figcaption>Diplomatic Hall</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div id="contact" class="tab">
+            <hgroup>
+                <h2>Contact</h2>
+                <h3>Get in Touch</h3>
+            </hgroup>
+            <p>Contact us for more information or any inquiries about the world of Mythren.</p>
+        </div>
     </main>
-    <section aria-label="Characters" id="characters">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Characters</h2>
-                    <h3>Meet the Heroes and Villains</h3>
-                </hgroup>
-                <p>Detailed descriptions of the key characters in the world of Mythren.</p>
-                <!-- Character sections -->
-                <section>
-                    <hgroup>
-                        <h3>Kong Alaric af Aldoria</h3>
-                        <h4>The Noble King</h4>
-                    </hgroup>
-                    <p>Kong Alaric af Aldoria, en ædel og majestætisk konge kendt for sin visdom og retfærdighed. Han regerer over Aldoria med en fast, men retfærdig hånd, og søger altid at beskytte sit folk.</p>
-                    <figure>
-                        <img src="billeder/king-alaric.webp" alt="King Alaric">
-                        <figcaption>Konge Alaric af Aldoria</figcaption>
-                    </figure>
-                </section>
-                <section>
-                    <hgroup>
-                        <h3>Elarion (High Elver, Konge)</h3>
-                        <h4>The Elven King</h4>
-                    </hgroup>
-                    <p>Elarion er den vise og ædle konge af de høje elvere i Eryndor. Han er kendt for sin retfærdighed og dybe forbindelse til naturens magi.</p>
-                    <figure>
-                        <img src="billeder/elarion.webp" alt="Elarion">
-                        <figcaption>Elarion</figcaption>
-                    </figure>
-                </section>
-                <section>
-                    <hgroup>
-                        <h3>Selandriel (High Elver, Rådgiver)</h3>
-                        <h4>The Wise Counselor</h4>
-                    </hgroup>
-                    <p>Selandriel er en klog rådgiver til Elarion. Hun er en mester i magi og kendt for sin strategiske tænkning.</p>
-                    <figure>
-                        <img src="billeder/selandriel.webp" alt="Selandriel">
-                        <figcaption>Selandriel</figcaption>
-                    </figure>
-                </section>
-                <section>
-                    <hgroup>
-                        <h3>Thalindor (High Elver, Kriger)</h3>
-                        <h4>The Mighty Warrior</h4>
-                    </hgroup>
-                    <p>Thalindor er en stærk kriger, der beskytter Eryndor med sit sværd og mod. Han er kendt for sin tapperhed og sin urokkelige loyalitet.</p>
-                    <figure>
-                        <img src="billeder/thalindor.webp" alt="Thalindor">
-                        <figcaption>Thalindor</figcaption>
-                    </figure>
-                </section>
-                <section>
-                    <hgroup>
-                        <h3>Aelarion (High Elver, Mage)</h3>
-                        <h4>The Powerful Mage</h4>
-                    </hgroup>
-                    <p>Aelarion er en magtfuld magiker, der bruger sin magiske energi til at beskytte sit folk og bekæmpe ondskab. Hans visdom og kraft er uden sidestykke.</p>
-                    <figure>
-                        <img src="billeder/aelarion.webp" alt="Aelarion">
-                        <figcaption>Aelarion</figcaption>
-                    </figure>
-                </section>
-            </article>
-        </div>
-    </section>
-    <section aria-label="World" id="world">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>World</h2>
-                    <h3>Explore the Realms</h3>
-                </hgroup>
-                <p>Discover the diverse landscapes and cultures of Mythren, from enchanted forests to majestic cities.</p>
-                <section>
-                    <hgroup>
-                        <h3>Enchanted Forest</h3>
-                    </hgroup>
-                    <p>The Enchanted Forest is a magical place where mystical creatures and ancient trees thrive. It's a place of wonder and mystery, filled with glowing plants and a crystal-clear river.</p>
-                    <figure>
-                        <img src="billeder/enchanted-forest.webp" alt="Enchanted Forest">
-                        <figcaption>Enchanted Forest</figcaption>
-                    </figure>
-                </section>
-                <section>
-                    <hgroup>
-                        <h3>Dwarven City</h3>
-                    </hgroup>
-                    <p>The Dwarven City is a grand underground metropolis, renowned for its intricate architecture and glowing forges. It's a place of great history and craftsmanship.</p>
-                    <figure>
-                        <img src="billeder/dwarven-city.webp" alt="Dwarven City">
-                        <figcaption>Dwarven City</figcaption>
-                    </figure>
-                </section>
-            </article>
-        </div>
-    </section>
-    <section aria-label="Politics" id="politics">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Politics</h2>
-                    <h3>The Power Dynamics</h3>
-                </hgroup>
-                <p>Understand the intricate political landscape of Mythren, where powerful leaders and cunning diplomats shape the fate of the realms.</p>
-                <section>
-                    <hgroup>
-                        <h3>Diplomatic Hall</hgroup>
-                    </hgroup>
-                    <p>The Diplomatic Hall is where key decisions are made. It's a place where leaders from different realms come together to discuss and negotiate the future of Mythren.</p>
-                    <figure>
-                        <img src="billeder/diplomatic-hall.webp" alt="Diplomatic Hall">
-                        <figcaption>Diplomatic Hall</figcaption>
-                    </figure>
-                </section>
-            </article>
-        </div>
-    </section>
     <footer class="container">
         <p>&copy; 2024 Mythren: Legends Unfolded. All rights reserved.</p>
     </footer>
+    <script>
+        function openTab(tabId) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabId).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+        // Set default tab to open
+        document.getElementById("home").style.display = "block";
+    </script>
 </body>
 </html>
