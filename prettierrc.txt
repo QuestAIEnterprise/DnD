@@ -1,0 +1,11 @@
+{
+  "printWidth": 80,            // Linjer brydes ved 80 tegn for bedre læsbarhed
+  "tabWidth": 2,               // Bruger to mellemrum per tabulator for at spare plads
+  "useTabs": false,            // Bruger mellemrum i stedet for tabulatorer for konsistens
+  "semi": true,                // Tilføjer semikoloner for at undgå ASI-fælder
+  "singleQuote": true,         // Bruger enkeltanførselstegn for JavaScript-standard
+  "trailingComma": "es5",      // Tilføjer kommaer til slutningen af objekter og arrays for bedre diffs
+  "bracketSpacing": true,      // Tilføjer mellemrum inde i krøllede parenteser for bedre læsbarhed
+  "arrowParens": "always",     // Tilføjer altid parenteser omkring argumenter til pilefunktioner for klarhed
+  "proseWrap": "preserve"      // Bevarer eksisterende linjebrud i Markdown-filer
+}
