@@ -6,13 +6,13 @@ import '../styles/fonts.css';
 import '../styles/theme.css';
 
 const Layout = ({ children }) => (
-  <>
-    <Header />
-    <main className="container">
-      {children}
-    </main>
-    <Footer />
-  </>
+    <>
+        <Header />
+        <main className="container">
+            {children}
+        </main>
+        <Footer />
+    </>
 );
 
 export default Layout;
