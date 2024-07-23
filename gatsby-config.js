@@ -1,9 +1,9 @@
 module.exports = {
     siteMetadata: {
-        title: `DnD 5th Edition Hub`,
-        description: `A comprehensive website for managing Dungeons & Dragons 5th Edition campaigns, characters, and more.`,
+        title: `Mythren: Legends Unfolded`,
+        description: `A comprehensive website for managing Mythren, a fantastical realm.`,
         author: `@yourname`,
-        siteUrl: `https://www.yourdomain.com`, // Opdater med dit domænenavn
+        siteUrl: `https://username.github.io`, // Opdater med dit domænenavn
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -28,13 +28,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `DnD 5E Hub`,
-                short_name: `DnD`,
+                name: `Mythren: Legends Unfolded`,
+                short_name: `Mythren`,
                 start_url: `/`,
                 background_color: `#1A1A1D`,
                 theme_color: `#D32F2F`,
                 display: `minimal-ui`,
-                icon: `src/images/dnd-favicon.png`, // Omdøbt stien til dit favicon
+                icon: `src/images/dnd-favicon.png`,
             },
         },
         {
